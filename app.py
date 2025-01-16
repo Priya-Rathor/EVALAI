@@ -145,6 +145,9 @@ class Item(BaseModel):
     suggested_answer: str
     student_answer: str
 
+
+
+
 #---------------------------------------------------------------------- 
 #                     FastAPI endpoint for Hello 
 #----------------------------------------------------------------------
@@ -190,5 +193,5 @@ async def evaluate_items(items: List[Item]):
 #                       Run FastAPI
 #----------------------------------------------------------------
 if __name__ == "__main__":
-    uvicorn.run(app, host="127.0.0.1", port=7100)
+    uvicorn.run(app, host="0.0.0.0", port=7100)
     
